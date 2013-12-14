@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ECOMFE Form Builder</title>
+    <script src="asset/dep/esl.js"></script>
+    <script src="asset/dep/jquery.js"></script>
+    <link rel="stylesheet" href="asset/dep/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="asset/index/index.css">
+</head>
+<body>
+    <header id="nav">
+        <div id="logo">FoBu</div>
+        <ul></ul>
+        <div id="loginPanel">登录</div>
+    </header>
+    <nav id="tool">
+        <ul id="category-list" class="tabs">
+            <li data-tab="control" title="控件" class="active"><i class="fa fa-cogs"></i></li>
+            <li data-tab="layout" title="布局"><i class="fa fa-columns"></i></li>
+        </ul>
+        <ul class="tab-panel active" data-for-tab="control">
+            <li class="dragger" draggable="true"><i class="fa fa-text-width"></i>Text</li>
+            <li class="dragger" draggable="true"><i class="fa fa-edit"></i>TextArea</li>
+        </ul>
+        <ul class="tab-panel" data-for-tab="layout">
+            <li class="dragger" draggable="true"><i class="fa fa-th-large"></i>6:6</li>
+            <li class="dragger" draggable="true"><i class="fa fa-th"></i>4:4:4</li>
+        </ul>
+    </nav>
+    <section id="main">
+        <div class="edit-row draggable" draggable="true">
+            <label class="title">行</label>
+            <i class="dragger fa fa-arrows" title="移动"></i>
+            <i class="remover fa fa-times" title="删除"></i>
+            <div class="block-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="edit-column draggable" draggable="true">
+                            <label class="title">列</label>
+                            <div class="dragger" title="移动"><i class="fa fa-arrows"></i></div>
+                            <div class="remover" title="删除"><i class="fa fa-times"></i></div>
+                            <div class="block-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="edit-column draggable" draggable="true">
+                            <label class="title">列</label>
+                            <div class="dragger" title="移动"><i class="fa fa-arrows"></i></div>
+                            <div class="remover" title="删除"><i class="fa fa-times"></i></div>
+                            <div class="block-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="edit-column draggable" draggable="true">
+                            <label class="title">列</label>
+                            <div class="dragger" title="移动"><i class="fa fa-arrows"></i></div>
+                            <div class="remover" title="删除"><i class="fa fa-times"></i></div>
+                            <div class="block-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit-row draggable" draggable="true">
+            <label class="title">行</label>
+            <div class="dragger" title="移动"><i class="fa fa-arrows"></i></div>
+            <div class="remover" title="删除"><i class="fa fa-times"></i></div>
+            <div class="block-content">
+                
+            </div>
+        </div>
+
+    </section>
+    <script>
+    require.config({
+        baseUrl: 'src',
+        paths: {},
+        packages: [{
+            name: 'esui',
+            location: 'dep/esui/src',
+            main: 'main'
+        }, {
+            name: 'emitter',
+            location: 'dep/eventEmitter',
+            main: 'EventEmitter'
+        }]
+    });
+    require(['index/index'], function (main) {
+        main.init();
+    });
+    </script>
+</body>
+</html>

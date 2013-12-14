@@ -1,0 +1,87 @@
+@import "./variable";
+
+#tool {
+
+    position: absolute;
+    width: @tool-width;
+    left: 0;
+    top: @logo-width;
+    bottom: 0;
+
+    .tabs {
+
+        @bgc: #91c46b;
+
+        position: absolute;
+        width: @logo-width;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: @bgc;
+        
+        li {
+            width: @logo-width;
+            height: @logo-width - 1;
+            border-bottom: 1px solid darken(@bgc, 5%);
+            line-height: @logo-width;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            color: #57893e;
+        
+            &:hover {
+                background-color: lighten(@bgc, 10%);
+                color: #30572a;
+            }
+
+            &:active {
+                color: #30572a;
+                background-color: darken(@bgc, 15%);
+            }
+
+        }
+
+        li.active {
+            color: #30572a;
+            background-color: darken(@bgc, 10%);
+        }
+
+    }
+
+    .tab-panel {
+
+        @bgc: #eee;
+
+        display: none;
+        position: absolute;
+        width: 180px;
+        left: @logo-width;
+        top: 0;
+        bottom: 0;
+        background-color: darken(@bgc, 10%);
+        
+        li {
+            height: @logo-width - 1;
+            line-height: @logo-width - 1;
+            padding: 0 10px;
+            background-color: @bgc;
+            border-bottom: 1px solid darken(@bgc, 10%);
+
+        
+            i {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background-color: lighten(@bgc, 3%);
+            }
+
+        }
+
+        &.active {
+            display: block;
+        }
+
+    }
+
+}

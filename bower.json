@@ -1,0 +1,27 @@
+{
+  "name": "efb",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ecomfe-vteam/ebf",
+  "authors": [
+    "leon <leonlu@outlook.com>"
+  ],
+  "description": "ecomfe form builder",
+  "main": "src/main.js",
+  "keywords": [
+    "form",
+    "builder"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "est": "https://github.com/ecomfe/est.git",
+    "esui": "https://github.com/ecomfe/esui.git",
+    "esl": "~1.6.6",
+    "eventEmitter": "~4.2.6",
+    "font-awesome": "~4.0.3",
+    "egrid": "~0.0.1"
+  }
+}

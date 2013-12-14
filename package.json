@@ -1,0 +1,31 @@
+{
+  "name": "ebf",
+  "version": "0.0.1",
+  "description": "ecomfe form builder",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ecomfe-vteam/ebf.git"
+  },
+  "keywords": [
+    "form",
+    "build"
+  ],
+  "author": "leonlu@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecomfe-vteam/ebf/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-less": "~0.8.3"
+  }
+}
